@@ -1,0 +1,210 @@
+/* 
+Projeto:
+Box Model
+Box Sizing
+Flexbox
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+/* reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:burlywood;
+    font-family: 'Open Sans', sans-serif;
+  
+    color: #a6a6a6;
+    
+}
+
+/* ******************* CABECALHO ******************** */
+
+header {
+        background-color:gray;
+}
+.header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items:center;
+
+    width: 80%;
+    max-width:  1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+/* background-color: salmon; */
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid white;     */
+} 
+nav a {
+    padding: 30px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color:white;
+    text-decoration: none;
+
+    transition: background-color 0,4s;
+}
+nav a:hover {
+    background-color:#878787;
+    
+}
+h1 {
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color:white;
+}
+h1 span{
+    font-weight: 400;
+    font-family: cursive;
+    font-style: italic;
+
+}
+
+/* ******************** MAIN ****************** */
+
+main {
+    
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+
+    /* height: 500px;  */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: transparent;
+
+}
+/* section com id conteúdo */
+#conteudo {
+    width: 73%;
+    background-color: white;
+   padding-bottom: 30px;
+   
+    }
+
+aside {
+    width: 25%;
+    
+}
+
+/* imagem */
+#lapis {
+    width: 100%;
+}
+
+h2 {
+    font-size: 16px;
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 15px;
+    font-weight: 400;
+    
+
+}
+
+p {
+    margin: 10px;
+    
+}
+/* ******************** ASIDE ****************** */
+.aside-box {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.aside-box h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #efefeF;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.aside-box form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 1px solid red; */
+}
+
+.aside-box form input{
+    width: 80%;
+    height: 40px;
+    border-color: 1px solid #efefeF;
+
+}
+
+.aside-box form button {
+    background-color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+    padding: 10px;
+
+    width: 25%;
+    height: 40px;
+
+}
+
+.aside-box form button i {
+    color: white;
+    font-size: 20px;
+    
+}
+
+.aside-box ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;;
+    border: 1px solid #6b6b6b
+    
+}
+
+.aside-box ul li {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    /* border: 1px solid red */
+    
+}
+
+.aside-box ul li a {
+    text-decoration: none;
+    color: #a6a6a6;
+}
+
+.aside-box ul li a:hover {
+    text-decoration: underline ;
+}
+
+.aside-box #email-market {
+    width: 90%;
+    max-width: initial;
+    margin-left: auto;
+    margin-right: auto;
+}

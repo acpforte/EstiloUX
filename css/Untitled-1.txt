@@ -1,0 +1,209 @@
+****************************************** HTML ****************************************** 
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo UX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ESTILO<span>UX</span></h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="conteudo">
+            <img id="lapis" src="./images/lapis-de-cor.png" alt="">
+            <h2>Cores com harmonia</h2>
+
+            <p>Entenda como fazer combinações de cores que fazem sentido para sua identidade visual</p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laborum doloribus nisi ipsum nihil. Perferendis, praesentium. Porro, aspernatur! Vel explicabo libero exercitationem odit eum repellat porro suscipit facilis similique ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sit minima quam pariatur inventore laboriosam iste quisquam, rerum necessitatibus recusandae fugiat iure illo omnis et libero. Modi accusantium accusamus quisquam.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laborum doloribus nisi ipsum nihil. Perferendis, praesentium. Porro, aspernatur! Vel explicabo libero exercitationem odit eum repellat porro suscipit facilis similique ducimus?
+            </p>
+        </section>
+
+        <aside>
+            <div class="aside-box">
+                <h3>Buscar</h3>
+
+                <form action="">
+                    <input type="text">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
+
+
+****************************************** CSS ****************************************** 
+
+/* 
+    Projeto:
+
+    Box Model
+    Box Sizing
+    Flexbox
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+
+/* reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: #EFEFEF;
+    font-family: cursive;
+    color: #A6A6A6;
+}
+
+/* *********************** CABEÇALHO *********************** */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/* linha */
+    align-items: center;/* coluna */
+    background-color: #6B6B6B;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid white; */
+}
+nav a {
+    padding: 30px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    
+    transition: background-color 0.4s;
+}
+
+nav a:hover {
+    background-color: #878787;
+}
+
+h1 {
+    /* align-self: center; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+h1 span {
+    font-weight: 300;
+    font-family: cursive;
+    font-style: italic;
+}
+
+/* *********************** MAIN *********************** */
+
+main {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* align-items: stretch; */
+    
+    width: 80%;
+    /*height: 500px;  retirar no final */
+    max-width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+/* section com id conteudo */
+#conteudo {
+    width: 73%;
+    padding-bottom: 30px;
+    background-color: white;
+}
+aside {
+    width: 25%;
+    background-color: #7df3e9;
+}
+
+/* imagem */
+#lapis {
+    width: 100%;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    margin: 10px;
+}
+
+/* *********************** ASIDE *********************** */
+.aside-box {
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.aside-box h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.aside-box form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.aside-box form input {
+    width: 80%;
+    max-width: 210px;
+    height: 40px;
+    border: 1px solid #EFEFEF;
+}
+
+.aside-box form button {
+    background-color: #A6A6A6;
+    border: 1px solid #a6A6A6;
+    padding: 10px;
+}
+
+.aside-box form button i {
+    color: white;
+    font-size: 20px;
+}
